@@ -1,11 +1,11 @@
-# ImageBoet
-## A simple python bot for Telegram for idiots who laugh at memes.
+# Crypto Boet
+## A simple python bot for Telegram for talking about crypto in group chats
 
-### What is ImageBoet?
-ImageBoet is a chat bot for telegram that is funny to watch fail!
+### What is Crypto Boet?
+Crypto Boet is a chat bot for telegram that knows the price of crypto currencies
 
 ### How does it work?
-ImageBoet will listen for all messages in a given chat (either directly with him or in a chat room which you invite him to) starting with "/get".
+Crypto Boet will listen for all messages in a given chat (either directly with him or in a chat room which you invite him to) starting with "/get".
 tl;dr: Look at one of the existing commands, you must have a run(bot, chat_id, user, request_text, keyConfig, number_of_results) function.
 
 ### How do I make my own bot using this?
@@ -26,14 +26,11 @@ OPTIONAL:
 ```bash
 git clone (url for your thorin fork) ~/bot
 cd ~/bot
-(PATH TO PYTHON27 INSTALL)\scripts\pip.exe install -t lib python-telegram-bot bs4 xmltodict six soundcloud feedparser requests tungsten mcstatus google-api-python-client
+(PATH TO PYTHON27 INSTALL)\scripts\pip.exe install -t lib python-telegram-bot google-api-python-client
 (PATH TO GOOGLE APP ENGINE LAUNCHER INSTALL)appcfg.py -A {GOOGLE APP ENGINE PROJECT ID} update .
 ```
 
-In lib\SoundCloud\Client.py set enable_ssl = False (Unsupported by Google App Engine)
-oh ja, /launch command needs a module called "dateutil" clone from https://github.com/dateutil/dateutil and copy the folder "dateutil" into lib.
-
 Finally go to https://{GOOGLE APP ENGINE PROJECT ID}.appspot.com/set_webhook?url=https://{GOOGLE APP ENGINE PROJECT ID}.appspot.com/webhook (replace both {GOOGLE APP ENGINE PROJECT ID}s with the Google App Engine Project ID) to tell Telegram where to send web hooks. This is all that is required to setup web hooks, you do not need to tell the Bot Father anything about web hooks.
 
-### Why the name ImageBoet?
-Boet is Afrikaans for brother. This bot is funny, light hearted, talking to him is like joking around with your "boet".
+### Why the name Crypto Boet?
+Boet is Afrikaans for brother. This bot is for very fast paced informal (probably South African) group chats.
