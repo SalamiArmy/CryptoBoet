@@ -2,9 +2,9 @@ import ConfigParser
 import unittest
 
 import telegram
-
-import commands.crypto as crypto
 from google.appengine.ext import testbed
+
+import telegram_commands.crypto as crypto
 
 
 class TestBitcoin(unittest.TestCase):
