@@ -1,0 +1,4 @@
+import main
+crypto = main.get_platform_command_code('telegram', 'crypto')
+def run(bot, chat_id, user, keyConfig, message, totalResults=1):
+    return crypto.run(bot, chat_id, user, keyConfig, message, totalResults)
